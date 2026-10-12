@@ -63,6 +63,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .profile-links a { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; }
 .profile-links a:hover { color: var(--link); }
 .profile-icon { flex: 0 0 16px; margin-top: 2px; }
+.profile-icon--x { color: #000; }
+[data-theme="dark"] .profile-icon--x { color: #fff; }
 .profile-links a .profile-icon { margin-top: 0; }
 .personal-content { min-width: 0; }
 .personal-content h1, .home-section > h2 { font-size: 28px; line-height: 1.3; font-weight: 700; margin: 0 0 18px; }
