@@ -1,0 +1,26 @@
+{% assign author = site.author %}
+{% if page.author and site.data.authors[page.author] %}{% assign author = site.data.authors[page.author] %}{% endif %}
+<aside class="personal-profile" aria-label="Author profile">
+  {% if author.avatar %}
+  {% assign avatar_url = author.avatar | prepend: '/images/' | relative_url %}
+  {% if author.avatar contains '://' %}{% assign avatar_url = author.avatar %}{% endif %}
+  <img class="profile-avatar" src="{{ avatar_url }}" alt="{{ author.name | escape }}" width="180" height="180">
+  {% endif %}
+  <div class="profile-details">
+    <h2 class="profile-name">{{ author.name | escape }}</h2>
+    {% if author.name_zh %}<p class="profile-name-zh" lang="zh">{{ author.name_zh | escape }}</p>{% endif %}
+    {% if author.pronouns %}<p class="profile-pronouns">{{ author.pronouns | escape }}</p>{% endif %}
+    {% if author.bio %}
+    {% assign bio_parts = author.bio | split: ' @ ' %}
+    <p class="profile-bio">{% if bio_parts.size == 2 %}<span>{{ bio_parts[0] | escape }}</span> <span>@ {{ bio_parts[1] | escape }}</span>{% else %}{{ author.bio | escape }}{% endif %}</p>
+    {% endif %}
+    <ul class="profile-links">
+      {% if author.location %}<li>{% include personal-icon.html name='location' %}<span>{{ author.location | escape }}</span></li>{% endif %}
+      {% if author.employer %}<li>{{ author.employer | escape }}</li>{% endif %}
+      {% for link in site.data.profile_links %}
+      {% assign value = author[link.key] %}
+      {% if value %}<li><a href="{{ value | prepend: link.prefix | escape }}">{% include personal-icon.html name=link.icon %}<span>{{ link.label | escape }}</span></a></li>{% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</aside>

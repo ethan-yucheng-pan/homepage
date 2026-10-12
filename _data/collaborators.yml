@@ -1,0 +1,30 @@
+# Edit people and descriptions here; the list markup lives in _includes/collaborators.html.
+- people:
+    - name: Prof. Mengdi Wang
+      url: https://mwang.princeton.edu/
+      affiliation: Department of Electrical and Computer Engineering, Princeton University
+    - name: Prof. Huazheng Wang
+      url: https://huazhengwang.github.io/
+      affiliation: School of Electrical Engineering and Computer Science, Oregon State University
+  description: During my remote research internship, I delved into LLM agents, RL, and Multi-Agent Systems, gaining invaluable insights and forming my main research interests.
+
+- people:
+    - name: Prof. Yao Li
+      url: https://stor.unc.edu/faculty-member/li-yao/
+      affiliation: Department of Statistics and Operations Research, University of North Carolina at Chapel Hill
+    - name: Prof. Minhao Cheng
+      url: 'https://cmhcbb.github.io/#:~:text=I%20am%20an%20assistant%20professor%20in%20the%20College%20of%20Information'
+      affiliation: College of Information Sciences and Technology, Pennsylvania State University
+  description: This remote research internship allowed me to explore AI Safety and Deep Learning in practice, deepening my practical knowledge.
+
+- people:
+    - name: Prof. Wenhui Fan
+      url: https://www.au.tsinghua.edu.cn/en/info/1091/3353.htm
+      affiliation: Department of Automation, Tsinghua University
+  description: As an undergraduate research assistant, I focused on LLM agents in robotics control, contributing to realistic applications.
+
+- people:
+    - name: Prof. Ke Deng
+      url: 'https://tsing.v-dk.com/en/teambuilder/faculty/ke-deng/#:~:text=Ke%20Deng%20-%20%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E7%BB%9F%E8%AE%A1%E5%AD%A6%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83.%20Associate%20Professor.%20Research%20Areas:%20statistical%20modeling'
+      affiliation: Center for Statistical Science, Tsinghua University
+  description: In this role, I researched applied statistics and deep learning, honing my skills in the mathematical and statistical aspects of AI.

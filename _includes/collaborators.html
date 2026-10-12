@@ -1,0 +1,8 @@
+<ul>
+{% for group in site.data.collaborators %}
+  <li>
+    {% for person in group.people %}<a href="{{ person.url | escape }}"><strong>{{ person.name | escape }}</strong></a>, {{ person.affiliation | escape }}{% unless forloop.last %} and {% endunless %}{% endfor %}:
+    <ul><li style="list-style-type: none;">{{ group.description | escape }}</li></ul>
+  </li>
+{% endfor %}
+</ul>

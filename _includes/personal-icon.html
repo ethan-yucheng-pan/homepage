@@ -1,0 +1,16 @@
+<svg class="profile-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+{% case include.name %}
+{% when 'location' %}
+<path d="M12 22s7-8 7-14a7 7 0 0 0-14 0c0 6 7 14 7 14Z" fill="currentColor"/><circle cx="12" cy="8" r="2.5" fill="var(--background)"/>
+{% when 'email' %}
+<rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="m3 6 9 7 9-7" stroke="currentColor" stroke-width="1.8"/>
+{% when 'github' %}
+<path fill="currentColor" d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.55.1.76-.24.76-.54v-2.05c-3.1.67-3.75-1.32-3.75-1.32-.5-1.28-1.23-1.62-1.23-1.62-1-.68.08-.67.08-.67 1.1.08 1.69 1.14 1.69 1.14.99 1.69 2.6 1.2 3.23.92.1-.72.38-1.2.7-1.48-2.47-.28-5.07-1.24-5.07-5.51 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.41.1-2.94 0 0 .94-.3 3.06 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.43 3.05-1.14 3.05-1.14.61 1.53.23 2.66.11 2.94.72.78 1.15 1.77 1.15 2.99 0 4.28-2.6 5.22-5.09 5.5.4.35.75 1.02.75 2.06v3.03c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/>
+{% when 'linkedin' %}
+<rect x="2" y="2" width="20" height="20" rx="2" fill="currentColor"/><circle cx="7" cy="7" r="1.4" fill="var(--background)"/><path d="M7 10v8m5 0v-8m0 4c0-5 6-5 6 0v4" stroke="var(--background)" stroke-width="2.2"/>
+{% when 'x' %}
+<path d="m4 3 16 18M20 3 4 21M7 3H4l13 18h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+{% else %}
+<path d="m9 15 6-6m-7 8-1 1a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2-1 1-1a4 4 0 0 1 6 6l-4 4a4 4 0 0 1-6 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+{% endcase %}
+</svg>

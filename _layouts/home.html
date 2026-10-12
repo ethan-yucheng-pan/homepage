@@ -1,0 +1,27 @@
+---
+layout: personal
+---
+<section class="home-section" id="about-me" aria-labelledby="about-heading">
+  <h2 id="about-heading">About Me</h2>
+  {{ content }}
+</section>
+<section class="home-section" id="news" aria-labelledby="news-heading">
+  <h2 id="news-heading">News</h2>
+  {% if site.data.news.size > 0 %}
+  <ul class="news-list">
+    {% for entry in site.data.news %}<li><span class="news-date">{{ entry.date | escape }}</span><div>{{ entry.text | markdownify }}</div></li>{% endfor %}
+  </ul>
+  {% endif %}
+</section>
+<section class="home-section" id="selected-publications" aria-labelledby="publications-heading">
+  <h2 id="publications-heading">Selected Publications</h2>
+  {% for entry in site.data.selected_publications %}
+  <article class="selected-publication">
+    <h3>{% if entry.paper_url %}<a href="{{ entry.paper_url | relative_url | escape }}">{{ entry.title | escape }}</a>{% else %}{{ entry.title | escape }}{% endif %}</h3>
+    {% if entry.authors %}<p>{{ entry.authors | escape }}</p>{% endif %}
+    {% if entry.venue %}<p class="entry-meta">{{ entry.venue | escape }}</p>{% endif %}
+    {% if entry.description %}{{ entry.description | markdownify }}{% endif %}
+    {% if entry.paper_url or entry.code_url %}<p class="publication-links">{% if entry.paper_url %}<a href="{{ entry.paper_url | relative_url | escape }}">Paper</a>{% endif %}{% if entry.code_url %}<a href="{{ entry.code_url | relative_url | escape }}">Code</a>{% endif %}</p>{% endif %}
+  </article>
+  {% endfor %}
+</section>

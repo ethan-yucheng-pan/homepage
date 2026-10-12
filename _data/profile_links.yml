@@ -1,0 +1,29 @@
+# Values come from author fields in _config.yml; add rows here for more links.
+- key: email
+  label: Email
+  prefix: "mailto:"
+  icon: email
+- key: github
+  label: GitHub
+  prefix: "https://github.com/"
+  icon: github
+- key: linkedin
+  label: LinkedIn
+  prefix: "https://www.linkedin.com/in/"
+  icon: linkedin
+- key: twitter
+  label: X (formerly Twitter)
+  prefix: "https://twitter.com/"
+  icon: x
+- key: googlescholar
+  label: Google Scholar
+  prefix: ""
+  icon: link
+- key: orcid
+  label: ORCID
+  prefix: ""
+  icon: link
+- key: uri
+  label: Website
+  prefix: ""
+  icon: link

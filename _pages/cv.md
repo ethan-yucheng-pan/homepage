@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: personal
 title: "CV"
 permalink: /cv/
 author_profile: true
@@ -55,9 +55,7 @@ Talks
   
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+{% include teaching-summary.html %}
   
 Service and leadership
 ======

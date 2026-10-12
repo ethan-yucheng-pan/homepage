@@ -8,27 +8,28 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Yucheng Pan / Personal Homepage"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Yucheng Pan"
-description              : &description "Undergraduate @ Tsinghua"
-url                      : https://etherealsean.github.io/yucheng-pan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "etherealsean/yucheng-pan.github.io"
+description              : &description "PhD student @ University of Maryland"
+url                      : "https://ethan-yucheng-pan.github.io" # GitHub Pages host for the repository owner
+baseurl                  : "/homepage" # this repository is a project site
+repository               : "ethan-yucheng-pan/homepage"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
+#               The custom sidebar is rendered by /_includes/personal-profile.html.
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "avatar.jpg" # filename of avatar image placed in /images/
   name             : "Yucheng (Ethan) Pan"
+  name_zh          : "潘禹丞"
   pronouns         : # he/him
-  bio              : "Undergraduate @ Tsinghua University"
-  location         : "Beijing, China"
+  bio              : "PhD student @ University of Maryland"
+  location         : "College Park, Maryland, USA"
   employer         : # "Red Brick University"
   uri              : # URL
-  email            : "yuchengpan707@gmail.com" 
+  email            : "ycpan@umd.edu"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -43,7 +44,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "etherealsean"
+  github           : "ethan-yucheng-pan" # Username
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -212,7 +213,7 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
@@ -232,54 +233,54 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: personal
       author_profile: true
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
   # _pages
   - scope:
       path: ""
       type: pages
     values:
-      layout: single
+      layout: personal
       author_profile: true
   # _teaching
   - scope:
       path: ""
       type: teaching
     values:
-      layout: single
+      layout: personal
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _publications
   - scope:
       path: ""
       type: publications
     values:
-      layout: single
+      layout: personal
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _portfolio
   - scope:
       path: ""
       type: portfolio
     values:
-      layout: single
+      layout: personal
       author_profile: true
-      share: true
+      share: false
       comment: true
   # _talks
   - scope:
       path: ""
       type: talks
     values:
-      layout: talk
+      layout: personal
       author_profile: true
-      share: true
+      share: false
 
 
 # Sass/SCSS

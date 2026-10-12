@@ -1,5 +1,12 @@
-# Academic Pages
+# Yucheng Pan — Homepage
+
+This Jekyll site uses a small custom layout for its main pages. Content and display code are mapped in [SITE_GUIDE.md](SITE_GUIDE.md). The original Academic Pages files remain available for reference and rollback.
+
+## Original template documentation
+
 **Academic Pages is a Github Pages template for academic websites.**
+
+For this repository's local preview, GitHub Pages setup, and content-editing map, see [SITE_GUIDE.md](SITE_GUIDE.md).
 
 # Getting Started
 

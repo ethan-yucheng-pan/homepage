@@ -1,0 +1,4 @@
+{% for entry in site.data.teaching %}
+<h2>{{ entry.course | escape }}</h2>
+<p>{{ entry.role | escape }} · {{ entry.term | escape }}<br>{{ entry.institution | escape }}</p>
+{% endfor %}
